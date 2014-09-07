@@ -7,8 +7,10 @@ env:
  global:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
   - secure: w+Z2yFer0Hy90uGucVMnOlzcDsy7A3ae8VeD5dPW/iyyHSNGrlLgauw+hOzvFNoFWlbkNvXRq4y5nQFhLfn89Egq92y1Z1rlOmXr8jVg/xsvxItidDatJTfvleDDGfUlxBVTUoPPtGvHS4AEkQFOtdLPbuEpSDBVm49df6nuF1grth9/lTdGVZ6s20GbrnpU3dpUrcJ9ltqjN6hgnwzUqAE7o6uYm/V/4Vrml29rU+pCVIqZySbG7PRhNvcmrxjjW+Kw9i9vUq9ZJUV4/NCcLo9OJ9IMtxiXiNTkIjQVMO6RYe2N3Pa9nDr4y0/HP+bjHYUwyTu3hab7logUE2DVcQ==
+  - AxTBCVM/TE2ZkYvrGdhFQWAzLduvsYly3sw1ebP9pIwmsIG2VPeGm2R+moIw3LX1Fmhqms8teu+/e4pxWRF3UGLouExF/w7+d0otPzgCvsghvPEkw2yrR0KyQV/Pzt1Sp+Kb6pIzOLmbASlw2SoLWpHQ9tf//pDb3OGe/1zO0DtvqO5BDhuq1H5kKYm6Czbu64/BDd8AWihRyqF78maiJSTiJVU12rlzegxhIN4hX5GFjF3yvZMsXa79k30p9SJpBtfP11sT2GQ6PlsB9lpoVf7vKWrCkwyCo2sLRyjZAT+hqCzrIpeo0r/0Nw3OHETOzaNhl78QaKpij1negyh73g==
 services:
   - couchdb
 script:
- echo $Foo
+ - echo $Foo
+ - echo $Testing and $Project
 
