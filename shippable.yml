@@ -11,6 +11,8 @@ env:
 services:
   - couchdb
 script:
- - echo $Foo
- - echo $Testing and $Project
-
+  - echo $SHIPPABLE_RUBY
+  - echo $SHIPPABLE_VE_DIR
+  - echo $USER
+  - echo $VIRTUALENV_PYTHON
+  - echo $VIRTUALENV_RUBY 
