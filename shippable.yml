@@ -10,4 +10,4 @@ env:
  
 services:
   - couchdb
-cache: true
+#cache: true
