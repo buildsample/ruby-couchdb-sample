@@ -9,4 +9,7 @@ env:
  
 services:
   - couchdb
-cache: true
+#cache: true
+after_script:
+ - cp coverage.csv ./shippable/test/codecoverage
+ archive: true
