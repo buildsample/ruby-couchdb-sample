@@ -7,11 +7,11 @@ build_image: shippable/minv2
   
 env:
    - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
- 
- 
+
 services:
   - couchdb
 #cache: true
+
 
 after_script:
  - cp coverage.csv ./shippable/test/codecoverage
