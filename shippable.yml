@@ -3,11 +3,14 @@ language: ruby
 rvm:
   - 2.2.0
   #- 2.0.0
-#build_image: shippable/minv2:beta
+build_image: shippable/minv2:beta
   
 env:
    - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
- 
+
+before_install:
+  #- source /home/shippable/.rvm/scripts/rvm
+  - source ~/.rvm/scripts/rvm && rvm use 2.2.0
  
 services:
   - couchdb
