@@ -18,3 +18,7 @@ after_script:
  
  
 archive: true
+
+branches:
+  only:
+   - testing
