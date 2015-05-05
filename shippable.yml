@@ -20,5 +20,5 @@ after_script:
 archive: true
 
 branches:
-  only:
+  except:
    - testing
