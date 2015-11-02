@@ -4,6 +4,7 @@ rvm:
   - 2.2.0
   #- 2.0.0
   - 1.9.2
+  - ree
 #build_image: shippable/minv2:beta
   
 env:
@@ -26,3 +27,5 @@ archive: true
 matrix:
   exclude:
     - rvm: 1.9.2
+  allow_failures:
+    - rvm : ree
