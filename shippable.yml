@@ -28,4 +28,6 @@ matrix:
   exclude:
     - rvm: 1.9.2
   allow_failures:
-    - rvm : ree
+    - rvm: ree
+  include:
+    - rvm: 2.0.0
