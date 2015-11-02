@@ -2,7 +2,8 @@ language: ruby
 
 rvm:
   - 2.2.0
-#  - 2.0.0
+  #- 2.0.0
+  - 1.9.2
 #build_image: shippable/minv2:beta
   
 env:
@@ -22,3 +23,6 @@ after_script:
  
 archive: true
 
+matrix:
+  exclude:
+    - rvm: 1.9.2
