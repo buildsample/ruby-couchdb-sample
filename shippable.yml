@@ -19,6 +19,10 @@ services:
 after_script:
  - cp coverage.csv ./shippable/test/codecoverage
  
- 
+matrix:
+  include:
+    - rvm: 2.0.0
+      env: CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+    
 archive: true
 
